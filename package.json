@@ -1,0 +1,32 @@
+{
+  "name": "theiddhi-wholesale",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Burmese agricultural wholesale landing page built with Next.js and Tailwind CSS",
+  "packageManager": "pnpm@12.4.1",
+  "scripts": {
+    "dev": "next dev --webpack --hostname 127.0.0.1 --port 3000",
+    "build": "next build --webpack",
+    "start": "node scripts/serve.mjs",
+    "check": "pnpm typecheck && pnpm lint",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint . --max-warnings=0",
+    "lint:fix": "eslint . --fix --max-warnings=0"
+  },
+  "dependencies": {
+    "next": "^16.4.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "eslint": "^10.12.0",
+    "eslint-config-next": "16.4.0",
+    "postcss": "^8.5.0",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^5.9.0"
+  }
+}
