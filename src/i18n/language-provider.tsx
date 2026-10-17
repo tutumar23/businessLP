@@ -1,11 +1,13 @@
 "use client";
 
-import { createContext, useContext, useEffect, useState, type ReactNode } from "react";
-import { defaultLanguage, languageStorageKey, pageTitles, type Language } from "./config";
+import { createContext, useCallback, useContext, useEffect, useState, type ReactNode } from "react";
+import { defaultLanguage, languageStorageKey, pageDescriptions, pageTitles, type Language } from "./config";
+import { translate, type Translate } from "./messages";
 
 type LanguageContextValue = {
   language: Language;
   setLanguage: (language: Language) => void;
+  t: Translate;
 };
 
 const LanguageContext = createContext<LanguageContextValue | null>(null);
@@ -27,6 +29,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     document.documentElement.lang = language;
     document.title = pageTitles[language];
+    document.querySelector('meta[name="description"]')?.setAttribute("content", pageDescriptions[language]);
     if (preferencesLoaded) {
       try {
         localStorage.setItem(languageStorageKey, language);
@@ -34,8 +37,10 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     }
   }, [language, preferencesLoaded]);
 
+  const t = useCallback<Translate>((key, params) => translate(language, key, params), [language]);
+
   return (
-    <LanguageContext.Provider value={{ language, setLanguage }}>
+    <LanguageContext.Provider value={{ language, setLanguage, t }}>
       {children}
     </LanguageContext.Provider>
   );

@@ -2,19 +2,20 @@ import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
 import "./globals.css";
 import { LanguageProvider } from "@/i18n/language-provider";
+import { defaultLanguage, pageDescriptions, pageTitles } from "@/i18n/config";
 export const metadata: Metadata = {
-    title: "သိဒ္ဓိပွဲရုံ | Agricultural Wholesale",
-    description: "လက်ကားကုန်သည်များနှင့် လက်လီဆိုင်များအတွက် အာလူး၊ ကြက်သွန်ဖြူ၊ ချင်းနှင့် ရာသီပေါ်ကုန်စိမ်းများ — သိဒ္ဓိပွဲရုံ၊ အောင်ပန်း။",
+    title: pageTitles[defaultLanguage],
+    description: pageDescriptions[defaultLanguage],
     icons: {
-        icon: { url: "/assets/logo.png", type: "image/png", sizes: "192x192" },
-        apple: "/assets/logo.png",
+        icon: { url: "/images/logo.png", type: "image/png", sizes: "192x192" },
+        apple: "/images/logo.png",
     },
 };
 export const viewport: Viewport = { themeColor: "#075333" };
 export default function RootLayout({ children }: {
     children: ReactNode;
 }) {
-    return (<html lang="my">
+    return (<html lang={defaultLanguage}>
         <head>
             <link rel="preconnect" href="https://fonts.googleapis.com" />
             <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

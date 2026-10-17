@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" fill="none" stroke="#657466" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+<defs>
+            <radialGradient id="garlic-pearl-light" cx="35%" cy="35%" r="75%">
+              <stop offset="0%" stop-color="#fff8e4" stop-opacity=".4" />
+              <stop offset="100%" stop-color="#e2ecc5" stop-opacity=".03" />
+            </radialGradient>
+          </defs>
+          <path fill="url(#garlic-pearl-light)" d="M46 8c3 17 1 22-11 30C18 48 7 61 9 80c2 23 25 29 41 29s39-6 41-29c2-19-9-32-26-42C53 30 53 25 56 8M46 8h10" />
+          <path opacity=".6" d="M43 39C29 55 24 85 39 107m18-68c14 16 19 46 4 68M50 39l-1 15m0 39 1 16m-9 0-5 6m14-6v8m9-8 5 6" />
+          <g fill="currentColor" stroke="none">
+            <ellipse cx="36" cy="73" rx="2.8" ry="3.8" />
+            <ellipse cx="64" cy="73" rx="2.8" ry="3.8" />
+          </g>
+          <g fill="#fff8e4" stroke="none">
+            <circle cx="35.2" cy="71.8" r=".9" />
+            <circle cx="63.2" cy="71.8" r=".9" />
+          </g>
+          <path d="M44 83q6 7 12 0" />
+          <g fill="#efa99b" stroke="none" opacity=".75">
+            <ellipse cx="26" cy="82" rx="5.5" ry="3.5" />
+            <ellipse cx="74" cy="82" rx="5.5" ry="3.5" />
+          </g>
+          <path opacity=".7" d="m10 82-6-4m86 4 6-4" />
+</svg>

@@ -1,0 +1,195 @@
+{
+  "metadata": {
+    "title": "Siddhi Produce Trading | Agricultural Wholesale",
+    "description": "Potatoes, garlic, ginger, and seasonal vegetables for wholesalers and retail shops — Siddhi Produce Trading, Aungban."
+  },
+  "languageSwitcher": {
+    "label": "Choose language",
+    "optionLabel": "EN",
+    "optionName": "English"
+  },
+  "common": {
+    "skipToContent": "Skip to content",
+    "location": "Aungban, Shan State",
+    "callLabel": "Call {phone}"
+  },
+  "brand": {
+    "name": "Siddhi",
+    "tagline": "Produce Trading",
+    "homeLabel": "Siddhi Produce Trading home",
+    "logoAlt": "Siddhi Produce Trading agricultural emblem"
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "Our story",
+    "products": "Our produce",
+    "traders": "Trader reviews",
+    "contact": "Contact",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "label": "Main navigation"
+  },
+  "hero": {
+    "eyebrow": "FOR WHOLESALERS & RETAILERS",
+    "title": "Good produce.",
+    "subtitle": "Rooted in quality.",
+    "description": "Potatoes, garlic, ginger, and seasonal vegetables for fellow wholesalers and retail shops. Find the produce your business needs in one place.",
+    "explore": "Explore our produce",
+    "callUs": "Call us",
+    "wholesale": "Wholesale produce",
+    "imageAlt": "Farmland with fresh potatoes and garlic"
+  },
+  "about": {
+    "partner": "Your partner in produce wholesale",
+    "eyebrow": "OUR ROOTS",
+    "title": "A local partner.\nFor your produce business.",
+    "description": "Based in Aungban, Shan State, Siddhi Produce Trading serves fellow wholesalers and retail shops with potatoes, garlic, ginger, and seasonal vegetables.",
+    "orderDescription": "Whether you are planning regular purchases or a larger order for resale, tell us which produce and quantities you need. Let’s discuss current availability and pricing.",
+    "action": "Let’s grow together",
+    "imageAlt": "Produce with a green agricultural landscape",
+    "logoAlt": "Siddhi Produce Trading emblem"
+  },
+  "trading": {
+    "wholesale": {
+      "soe-trading": "Soe Trading",
+      "mate-kaung-trading": "Mate Kaung Trading",
+      "aung-thapyay-trading": "Aung Thapyay Trading",
+      "shwe-moe-trading": "Shwe Moe Trading",
+      "pyae-sone-trading": "Pyae Sone Trading",
+      "aung-chan-thar-trading": "Aung Chan Thar Trading",
+      "shwe-lel-yar-trading": "Shwe Lel Yar Trading",
+      "mingalar-trading": "Mingalar Trading"
+    },
+    "retail": {
+      "sein-lan-produce": "Sein Lan Produce",
+      "shwe-chan-produce": "Shwe Chan Produce",
+      "metta-produce": "Metta Produce",
+      "yadanar-produce": "Yadanar Produce",
+      "aung-may-produce": "Aung May Produce",
+      "thit-lwin-produce": "Thit Lwin Produce",
+      "cetana-produce": "Cetana Produce",
+      "lat-hsat-produce": "Lat Hsat Produce"
+    },
+    "title": "Wholesale traders"
+  },
+  "products": {
+    "items": {
+      "potatoes": {
+        "tag": "POTATOES",
+        "name": "Potatoes",
+        "subtitle": "Fresh & versatile",
+        "description": "A versatile everyday staple for curries, soups, and fried dishes.",
+        "imageAlt": "Fresh potatoes"
+      },
+      "garlic": {
+        "tag": "GARLIC",
+        "name": "Garlic",
+        "subtitle": "Aromatic & essential",
+        "description": "An aromatic kitchen essential for curries, stir-fries, and everyday seasoning.",
+        "imageAlt": "Garlic bulbs"
+      },
+      "ginger": {
+        "tag": "GINGER",
+        "name": "Ginger",
+        "subtitle": "Naturally warming",
+        "description": "Distinctive warmth and fragrance for curries, soups, and ginger drinks.",
+        "imageAlt": "Fresh ginger"
+      },
+      "seasonal": {
+        "tag": "SEASONAL",
+        "name": "Seasonal produce",
+        "subtitle": "Taro, chili & more",
+        "description": "Taro, chili, green beans, and more. A changing selection that follows the seasons.",
+        "imageAlt": "Seasonal taro roots, red and green chili peppers, and green beans"
+      }
+    },
+    "eyebrow": "PRODUCE FOR YOUR BUSINESS",
+    "title": "Fresh produce for your next order.",
+    "description": "Everyday staples and seasonal selections for wholesalers and retail shops.",
+    "availability": "Call for current stock, order quantities, and wholesale pricing."
+  },
+  "values": {
+    "fresh": {
+      "title": "Fresh produce",
+      "description": "Everyday produce for your shop’s shelves."
+    },
+    "traders": {
+      "title": "For wholesalers & retailers",
+      "description": "Wholesale enquiries for produce businesses."
+    },
+    "seasonal": {
+      "title": "Seasonal selection",
+      "description": "A selection that follows the seasons."
+    },
+    "location": {
+      "title": "Find us in Aungban",
+      "description": "Visit us with directions from our map."
+    }
+  },
+  "traders": {
+    "items": {
+      "jenny-wilson": {
+        "city": "Meiktila City",
+        "name": "Daw Khin Mar Win",
+        "role": "Retail trader",
+        "quote": "Fresh produce and a great selection make stocking our shop so much easier."
+      },
+      "tom-kolt": {
+        "city": "Bago City",
+        "name": "U Aung Min",
+        "role": "Wholesale trader",
+        "quote": "Clear pricing, helpful conversations, and the quantities our business needs."
+      },
+      "dianne-russell": {
+        "city": "Mandalay City",
+        "name": "Daw Thida",
+        "role": "Produce shop owner",
+        "quote": "Potatoes, garlic, and seasonal vegetables. Everything we need, in one place."
+      },
+      "jane-lee": {
+        "city": "Taunggyi City",
+        "name": "Daw Nan Khin Htwe",
+        "role": "Retail trader",
+        "quote": "It’s easy to check what’s in season and plan our next order together."
+      },
+      "alex-chen": {
+        "city": "Yangon City",
+        "name": "U Kyaw Zin",
+        "role": "Wholesale trader",
+        "quote": "A friendly team that takes the time to understand what our business needs."
+      },
+      "tom-hauser": {
+        "city": "Aungban City",
+        "name": "U Than Tun",
+        "role": "Produce shop owner",
+        "quote": "A convenient local stop for our produce enquiries whenever we’re in Aungban."
+      }
+    },
+    "status": "Showing {count} of {total} traders.",
+    "title": "Trusted by fellow traders",
+    "showLess": "Show less",
+    "showMore": "Show more"
+  },
+  "wholesale": {
+    "title": "Let’s plan your next wholesale order.",
+    "description": "Tell us what your business needs and ask for current wholesale prices."
+  },
+  "contact": {
+    "eyebrow": "LET’S CONNECT",
+    "title": "Talk to us about your business.",
+    "description": "Call us to discuss your wholesale order, or visit our premises in Aungban.",
+    "businessName": "Siddhi Produce Trading",
+    "locationLabel": "LOCATION",
+    "address": "Aungban, Shan State, Myanmar",
+    "phoneLabel": "PHONE NUMBER",
+    "callUs": "Call us",
+    "directions": "Get directions on Google Maps",
+    "mapTitle": "Siddhi Produce Trading Google Maps location"
+  },
+  "footer": {
+    "copyright": "Siddhi Produce Trading. All rights reserved.",
+    "signoff": "Together in the produce trade.",
+    "produce": "Produce",
+    "navigationLabel": "Footer navigation"
+  }
+}

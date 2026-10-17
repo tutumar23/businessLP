@@ -20,6 +20,7 @@ const alwaysVisibleClasses = "before:opacity-100 after:opacity-65";
 type AnimatedLinkProps = AnchorHTMLAttributes<HTMLAnchorElement> & {
   animation?: "interaction" | "always";
   tone?: "light" | "forest";
+  variant?: "primary" | "glass" | "cream";
 };
 
 function usePressFeedback() {
@@ -36,13 +37,18 @@ function usePressFeedback() {
   return { pressed, showFeedback };
 }
 
-export function AnimatedLink({ className = "", animation = "interaction", tone = "light", onClick, onPointerDown, onKeyDown, ...props }: AnimatedLinkProps) {
+export function AnimatedLink({ className = "", variant = "primary", animation = "interaction", tone = "light", onClick, onPointerDown, onKeyDown, ...props }: AnimatedLinkProps) {
   const { pressed, showFeedback } = usePressFeedback();
   const appearance = tone === "forest"
     ? "[--trail-faint:#07533326] [--trail-medium:#07533399] [--trail-bright:#075333] before:inset-0 before:p-0.5"
     : "[--trail-faint:#ffffff26] [--trail-medium:#ffffff99] [--trail-bright:#ffffff] before:inset-0 before:p-0.5";
   const activation = animation === "always" ? alwaysVisibleClasses : interactionClasses;
-  return <a {...props} className={`${animationClasses} ${appearance} ${activation} ${className}`} data-pressed={pressed}
+  const variantClasses = {
+    primary: "bg-green text-white shadow-[0_5px_15px_#1d482118] hover:bg-[#3e721f] hover:shadow-[0_8px_20px_#1d48212b]",
+    glass: "border-[#fff9]! bg-[#ffffff0a] text-white backdrop-blur-[5px] hover:bg-[#ffffff1f]",
+    cream: "shrink-0 bg-[#f1f4dc] text-forest tracking-[.4px] hover:bg-white",
+  };
+  return <a {...props} className={`inline-flex min-h-[54px] items-center justify-center gap-2.5 rounded-lg border border-transparent px-5 py-[14px] text-sm font-semibold leading-[1.65] transition-[background,transform,box-shadow] duration-250 hover:-translate-y-[3px] active:translate-y-0 [@media(hover:none)]:hover:translate-y-0 ${variantClasses[variant]} ${animationClasses} ${appearance} ${activation} ${className}`} data-pressed={pressed}
     onPointerDown={event => { showFeedback(); onPointerDown?.(event); }}
     onClick={event => { showFeedback(); onClick?.(event); }}
     onKeyDown={event => { if (event.key === "Enter") showFeedback(); onKeyDown?.(event); }} />;

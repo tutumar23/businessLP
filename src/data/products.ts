@@ -1,87 +1,48 @@
 export const products = [
-    {
-        "id": "potatoes",
-        "photoClass": "product-photo photo-potatoes",
-        "imageAlt": "Fresh potatoes",
-        "tag": {
-            "my": "အာလူး",
-            "en": "POTATOES"
-        },
-        "name": {
-            "my": "အာလူး",
-            "en": "Potatoes"
-        },
-        "subtitle": {
-            "my": "Potatoes",
-            "en": "Fresh & versatile"
-        },
-        "description": {
-            "my": "သင့်ဆိုင်တွင် ပြန်လည်ရောင်းချရန် အာလူးများကို လက်ကား မှာယူနိုင်ပါသည်။",
-            "en": "A daily staple for your customers. Enquire about wholesale quantities."
-        }
-    },
-    {
-        "id": "garlic",
-        "photoClass": "product-photo photo-garlic",
-        "imageAlt": "Garlic bulbs",
-        "tag": {
-            "my": "ကြက်သွန်ဖြူ",
-            "en": "GARLIC"
-        },
-        "name": {
-            "my": "ကြက်သွန်ဖြူ",
-            "en": "Garlic"
-        },
-        "subtitle": {
-            "my": "Garlic",
-            "en": "Aromatic & essential"
-        },
-        "description": {
-            "my": "သင့်အရောင်းဆိုင်အတွက် ကြက်သွန်ဖြူ ရရှိနိုင်မှုနှင့် ဈေးနှုန်းများကို မေးမြန်းနိုင်ပါသည်။",
-            "en": "Stock your shop with garlic. Ask about availability and pricing."
-        }
-    },
-    {
-        "id": "ginger",
-        "photoClass": "product-photo photo-ginger",
-        "imageAlt": "Fresh ginger",
-        "tag": {
-            "my": "ချင်း",
-            "en": "GINGER"
-        },
-        "name": {
-            "my": "ချင်း",
-            "en": "Ginger"
-        },
-        "subtitle": {
-            "my": "Ginger",
-            "en": "Naturally warming"
-        },
-        "description": {
-            "my": "ပြန်လည်ရောင်းချရန် ချင်းများကို လိုအပ်သည့် ပမာဏအလိုက် စုံစမ်းမှာယူနိုင်ပါသည်။",
-            "en": "Enquire about ginger in the quantities your business needs."
-        }
-    },
-    {
-        "id": "vegetables",
-        "photoClass": "product-photo photo-vegetables",
-        "imageAlt": "Seasonal vegetables",
-        "tag": {
-            "my": "ရာသီပေါ်",
-            "en": "SEASONAL"
-        },
-        "name": {
-            "my": "ဟင်းသီးဟင်းရွက်များ",
-            "en": "Seasonal vegetables"
-        },
-        "subtitle": {
-            "my": "Seasonal vegetables",
-            "en": "The season’s best"
-        },
-        "description": {
-            "my": "သင့်ဆိုင်၏ ရွေးချယ်စရာများ စုံလင်စေရန် ရာသီပေါ်ကုန်စိမ်းများကို စုံစမ်းနိုင်ပါသည်။",
-            "en": "Broaden your shop’s selection. Ask about seasonal produce in stock."
-        }
-    }
+  {
+    "id": "potatoes",
+    "image": "/images/produce.jpg",
+    "imagePosition": "0% center",
+    "imageSize": "500% auto",
+    "imageAlt": "products.items.potatoes.imageAlt",
+    "tag": "products.items.potatoes.tag",
+    "name": "products.items.potatoes.name",
+    "subtitle": "products.items.potatoes.subtitle",
+    "description": "products.items.potatoes.description"
+  },
+  {
+    "id": "garlic",
+    "image": "/images/produce.jpg",
+    "imagePosition": "50% center",
+    "imageSize": "500% auto",
+    "imageAlt": "products.items.garlic.imageAlt",
+    "tag": "products.items.garlic.tag",
+    "name": "products.items.garlic.name",
+    "subtitle": "products.items.garlic.subtitle",
+    "description": "products.items.garlic.description"
+  },
+  {
+    "id": "ginger",
+    "image": "/images/produce.jpg",
+    "imagePosition": "75% center",
+    "imageSize": "500% auto",
+    "imageAlt": "products.items.ginger.imageAlt",
+    "tag": "products.items.ginger.tag",
+    "name": "products.items.ginger.name",
+    "subtitle": "products.items.ginger.subtitle",
+    "description": "products.items.ginger.description"
+  },
+  {
+    "id": "seasonal",
+    "image": "/images/seasonal-produce.png",
+    "imagePosition": "center",
+    "imageSize": "cover",
+    "imageAlt": "products.items.seasonal.imageAlt",
+    "tag": "products.items.seasonal.tag",
+    "name": "products.items.seasonal.name",
+    "subtitle": "products.items.seasonal.subtitle",
+    "description": "products.items.seasonal.description"
+  }
 ] as const;
-export type ProductId = (typeof products)[number]["id"];
+
+export type Product = (typeof products)[number];

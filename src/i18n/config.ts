@@ -1,15 +1,22 @@
+import { dictionaries } from "./messages";
+
 export const languages = ["my", "en"] as const;
 export type Language = (typeof languages)[number];
 
 export const defaultLanguage: Language = "my";
 export const languageStorageKey = "theiddhi-language";
 
-export const languageLabels: Record<Language, { label: string; name: string }> = {
-  my: { label: "မြန်မာ", name: "မြန်မာဘာသာ" },
-  en: { label: "EN", name: "English" },
-};
+export const languageLabels = {
+  my: { label: dictionaries.my.languageSwitcher.optionLabel, name: dictionaries.my.languageSwitcher.optionName },
+  en: { label: dictionaries.en.languageSwitcher.optionLabel, name: dictionaries.en.languageSwitcher.optionName },
+} satisfies Record<Language, { label: string; name: string }>;
 
 export const pageTitles: Record<Language, string> = {
-  my: "သိဒ္ဓိပွဲရုံ | Agricultural Wholesale",
-  en: "Theiddhi | Agricultural Wholesale",
+  my: dictionaries.my.metadata.title,
+  en: dictionaries.en.metadata.title,
+};
+
+export const pageDescriptions: Record<Language, string> = {
+  my: dictionaries.my.metadata.description,
+  en: dictionaries.en.metadata.description,
 };
